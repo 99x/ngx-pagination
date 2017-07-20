@@ -1,0 +1,26 @@
+{
+  "name": "@99xt/ngx-pagination",
+  "version": "0.1.0",
+  "description": "Simple pagination for angular2+ apps",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/99xt/ngx-pagination"
+  },
+  "author": {
+    "name": "thinkholic",
+    "email": "mailtokasun@gmail.com"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "homepage": "https://github.com/99xt/ngx-pagination#readme",
+  "bugs": {
+    "url": "https://github.com/99xt/ngx-pagination/issues"
+  },
+  "module": "ngx-pagination.js",
+  "typings": "ngx-pagination.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}

@@ -1,0 +1,16 @@
+
+<h3>@99xt/ngx-pagination</h3>
+
+<pre>
+  Total Record Count: <input type="number" [(ngModel)]="totalRecordCount" />
+
+  Number of records for a page: {{ recordsPerPage }}
+  
+  Selected Page: {{ selectedPage }}
+</pre>
+
+<pagination
+  [total]="totalRecordCount"
+  [limit]="recordsPerPage"
+  (onSelectPage)="selectPage($event)">
+</pagination>
