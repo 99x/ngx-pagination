@@ -1,65 +1,65 @@
 <div *ngIf="show">
-		<div>
-				<div *ngIf="loading">Loading...</div>
+  <div>
+	<div *ngIf="loading">Loading...</div>
 
-				<div *ngIf="!loading">
-						<nav>
-								<ul class="pagination">
-										<li
-												*ngIf="current>1"
-												(click)="goPrev()"
-												class="prev"
-										>
-												<a>Prev</a>
-										</li>
+	<div *ngIf="!loading">
+	  <nav>
+		<ul class="pagination">
+		  <li
+			*ngIf="current>1"
+			(click)="goPrev()"
+			class="prev"
+		  >
+		  <a>Prev</a>
+		  </li>
 
-										<li
-												*ngFor="let n of pagination.first"
-												(click)="selectPage(n)"
-												[ngClass]="{'active': current==n}"
-										>
-												<a>{{ n }}</a>
-										</li>
+		  <li
+		    *ngFor="let n of pagination.first"
+		    (click)="selectPage(n)"
+		    [ngClass]="{'active': current==n}"
+		  >
+		  <a>{{ n }}</a>
+		  </li>
 
-										<li
-												*ngIf="pagination.second.length>0"
-												class="empty"
-										>
-												<a>...</a>
-										</li>
+		  <li
+			*ngIf="pagination.second.length>0"
+			class="empty"
+		  >
+		  <a>...</a>
+		  </li>
 
-										<li
-												*ngFor="let n of pagination.second"
-												(click)="selectPage(n)"
-												[ngClass]="{'active': current==n}"
-										>
-												<a>{{ n }}</a>
-										</li>
+		  <li
+		    *ngFor="let n of pagination.second"
+		    (click)="selectPage(n)"
+		    [ngClass]="{'active': current==n}"
+		  >
+		  <a>{{ n }}</a>
+		  </li>
 
-										<li
-												*ngIf="pagination.third.length>0"
-												class="empty"
-										>
-												<a>...</a>
-										</li>
+		  <li
+			*ngIf="pagination.third.length>0"
+			class="empty"
+		  >
+		  <a>...</a>
+		  </li>
 
-										<li
-												*ngFor="let n of pagination.third"
-												(click)="selectPage(n)"
-												[ngClass]="{'active': current==n}"
-										>
-												<span>{{ n }}</span>
-										</li>
+		  <li
+			*ngFor="let n of pagination.third"
+			(click)="selectPage(n)"
+			[ngClass]="{'active': current==n}"
+		  >
+		  <span>{{ n }}</span>
+		  </li>
 
-										<li
-												*ngIf="next!=0"
-												(click)="goNext()"
-												class="next"
-										>
-												<span>Next</span>
-										</li>
-								</ul>
-						</nav>
-				</div>
-		</div>
+		  <li
+			*ngIf="next!=0"
+			(click)="goNext()"
+			class="next"
+		  >
+		  <span>Next</span>
+		  </li>
+		</ul>
+	  </nav>
+	</div>
+  </div>
 </div>
